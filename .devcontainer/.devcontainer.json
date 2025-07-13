@@ -1,0 +1,32 @@
+{
+	"name": "AppSolve application blocks in Azure Static Web App with managed api",
+	"dockerFile": "Dockerfile",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash",
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"prettier.printWidth": 120,
+				"[typescript]": {
+					"editor.formatOnSave": true
+				},
+				"[javascript]": {
+					"editor.formatOnSave": true
+				},
+				"[json]": {
+					"editor.formatOnSave": true
+				},
+				"workbench.iconTheme": "material-icon-theme"
+			},
+			"extensions": [
+        "dsznajder.es7-react-js-snippets",
+        "esbenp.prettier-vscode",
+				"PKief.material-icon-theme",
+				"GitHub.copilot", // GitHub Copilot
+				"humao.rest-client",
+				"ms-azuretools.vscode-azurefunctions",
+				"ms-azuretools.vscode-azurestaticwebapps"
+			]
+		}
+	}
+}
