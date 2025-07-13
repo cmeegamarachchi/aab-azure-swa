@@ -29,7 +29,7 @@ function Layout({ children, titleToActivate, breadcrumbs }:LayoutProps) {
     breadCrumbs: breadcrumbs,
   };
 
-  return <SideNav contentTitle data={_sideNavConfig}>{children}</SideNav>;
+  return <SideNav data={_sideNavConfig}>{children}</SideNav>;
 };
 
 Layout.Title = Title;
