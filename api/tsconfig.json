@@ -6,10 +6,5 @@
     "rootDir": ".",
     "sourceMap": true,
     "strict": false
-  },
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.js",
-    "./src/data/*.json"
-  ],
+  }
 }
