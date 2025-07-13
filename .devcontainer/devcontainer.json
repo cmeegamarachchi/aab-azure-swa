@@ -1,6 +1,10 @@
 {
 	"name": "AppSolve application blocks in Azure Static Web App with managed api",
 	"dockerFile": "Dockerfile",
+	"forwardPorts": [],
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -19,8 +23,8 @@
 				"workbench.iconTheme": "material-icon-theme"
 			},
 			"extensions": [
-        "dsznajder.es7-react-js-snippets",
-        "esbenp.prettier-vscode",
+				"dsznajder.es7-react-js-snippets",
+				"esbenp.prettier-vscode",
 				"PKief.material-icon-theme",
 				"GitHub.copilot", // GitHub Copilot
 				"humao.rest-client",
