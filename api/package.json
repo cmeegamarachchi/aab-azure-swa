@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "tsc && npm run copy-assets",
-    "copy-assets": "copyfiles -u 2 \"src/functions/data/**/*\" dist/src/functions/",
+    "copy-assets": "npx copyfiles -u 2 \"src/functions/data/**/*\" dist/src/functions/",
     "watch": "tsc -w",
     "clean": "rimraf dist",
     "prestart": "npm run clean && npm run build",
