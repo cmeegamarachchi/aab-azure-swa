@@ -90,7 +90,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
 
     const reloadContacts = () => {
         getAllHttp.sendRequest({
-            url: "/customers",
+            url: "/contacts",
             method: "GET"})
     };
 
@@ -100,7 +100,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
             id: contact.id ?? Math.random().toString(36).substring(2, 15) // generate a random id if not provided
         }
         updateContactHttp.sendRequest({
-            url: "/customers",
+            url: "/contacts",
             method: "POST",
             data:newContact,
             headers: { "Content-Type": "application/json" },
@@ -112,7 +112,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
 
     const updateContact = (id:string, contact: Partial<Contact>, onSuccess: (e:Contact) => void) => {
         updateContactHttp.sendRequest({
-            url: `/customers/${id}`,
+            url: `/contact/${id}`,
             method: "PUT",
             data:contact,
             headers: { "Content-Type": "application/json" },
