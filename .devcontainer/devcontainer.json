@@ -1,7 +1,7 @@
 {
 	"name": "AppSolve application blocks in Azure Static Web App with managed api",
 	"dockerFile": "Dockerfile",
-	"forwardPorts": [],
+	"forwardPorts": [4820, 7071, 8000],
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {}
 	},
@@ -29,7 +29,8 @@
 				"GitHub.copilot", // GitHub Copilot
 				"humao.rest-client",
 				"ms-azuretools.vscode-azurefunctions",
-				"ms-azuretools.vscode-azurestaticwebapps"
+				"ms-azuretools.vscode-azurestaticwebapps",
+				"ms-azuretools.vscode-azurestorage"
 			]
 		}
 	}
