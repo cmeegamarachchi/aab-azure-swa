@@ -134,4 +134,3 @@ dist
 /api/*.settings.json
 
 .vscode
-swa-cli.config.json
