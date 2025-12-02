@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/devcontainers/typescript-node:22
 
 ARG SWA_VERSION=2.0.7
 ARG AZURE_FUNCTION_CORE_TOOL_VERSION=4
-ARG AZURITE_VERSION=3.34.0
+ARG AZURITE_VERSION=3.35.0
 
 # Install Python
 RUN apt-get update && apt-get install -y \
