@@ -1,4 +1,4 @@
-import { BreadCrumbItem } from "@/components/SideNav/model";
+import type { BreadCrumbItem } from "@/components/SideNav/model";
 import Layout from "./../Layout";
 import SettingsForm from "./SettingsForm";
 

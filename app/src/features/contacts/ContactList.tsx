@@ -3,12 +3,12 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Contact } from "./models"
+import type { Contact } from "./models"
 import { PencilIcon } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
-import ContactForm, { ContactFormValues } from "./ContactForm"
+import ContactForm, { type ContactFormValues } from "./ContactForm"
 import { useContacts } from "./ContectProvider"
-import { toast } from "@/hooks/use-toast"
+import { toast } from "sonner"
 
 
 
@@ -26,11 +26,7 @@ const ContactsDataGrid:React.FC = () => {
   
   useEffect(() => {
     if (error) {
-      toast({
-        title: "Error",
-        description: `Failed to process request. Plesae review application logs for more details.`,
-        variant: "destructive",
-      })
+      toast.error("Failed to process request. Plesae review application logs for more details.")
     }
   }, [error])
 
@@ -85,6 +81,7 @@ const ContactsDataGrid:React.FC = () => {
             <TableHead>First Name</TableHead>
             <TableHead>Last Name</TableHead>
             <TableHead>Email</TableHead>
+            <TableHead>Signed on</TableHead>
             <TableHead>Street Address</TableHead>
             <TableHead>City</TableHead>
             <TableHead>Country</TableHead>
@@ -98,6 +95,7 @@ const ContactsDataGrid:React.FC = () => {
               <TableCell>{contact.first_name}</TableCell>
               <TableCell>{contact.last_name}</TableCell>
               <TableCell>{contact.email}</TableCell>
+              <TableCell>{contact.signed_on_date ? new Date(contact.signed_on_date).toLocaleDateString() : 'N/A'}</TableCell>
               <TableCell>{contact.street_address}</TableCell>
               <TableCell>{contact.city}</TableCell>
               <TableCell>{contact.country}</TableCell>

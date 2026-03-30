@@ -1,7 +1,7 @@
 {
 	"name": "AppSolve application blocks in Azure Static Web App with managed api",
 	"dockerFile": "Dockerfile",
-	"forwardPorts": [4820, 7071, 8000],
+	"forwardPorts": [4280, 7071, 8000],
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {}
 	},

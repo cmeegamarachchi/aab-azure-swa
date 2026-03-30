@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "Week 30",
+        "description": "Roster summary for week 30",
+        "start_date": "2023-07-24",
+        "end_data": "2023-07-30",
+        "created_by": "admin",
+        "created_at": "2023-07-01T10:00:00Z",
+        "published_by": "admin",
+        "published_at": "2023-07-02T10:00:00Z",
+        "status": "published"
+    },
+    {
+        "id": "2",
+        "name": "Week 31",
+        "description": "Roster summary for week 31",
+        "start_date": "2023-07-31",
+        "end_data": "2023-08-06",
+        "created_by": "admin",
+        "created_at": "2023-07-01T10:00:00Z",
+        "published_by": "admin",
+        "published_at": "2023-07-02T10:00:00Z",
+        "status": "published"
+    },
+    {
+        "id": "3",
+        "name": "Week 32",
+        "description": "Roster summary for week 32",
+        "start_date": "2023-08-07",
+        "end_data": "2023-08-13",
+        "created_by": "admin",
+        "created_at": "2023-07-01T10:00:00Z",
+        "published_by": "admin",
+        "published_at": "2023-07-02T10:00:00Z",
+        "status": "published"
+    },
+    {
+        "id": "4",
+        "name": "Week 33",
+        "description": "Roster summary for week 33",
+        "start_date": "2023-08-14",
+        "end_data": "2023-08-20",
+        "created_by": "admin",
+        "created_at": "2023-07-01T10:00:00Z",
+        "published_by": "admin",
+        "published_at": "2023-07-02T10:00:00Z",
+        "status": "draft"
+    }
+]

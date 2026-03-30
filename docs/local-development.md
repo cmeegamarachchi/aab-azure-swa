@@ -55,8 +55,7 @@ azurite --location ./_azurite --blobPort 10000 --queuePort 10001 --tablePort 100
 In another terminal:
 
 ```bash
-swa build
-swa start app/dist --api-location api
+swa build && swa start app/dist --api-location api
 ```
 
 This will launch the Azure SWA emulator at `http://localhost:4280` with:

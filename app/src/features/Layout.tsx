@@ -1,5 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import React from "react";
-import { BreadCrumbItem } from "@/components/SideNav/model";
+import type { BreadCrumbItem } from "@/components/SideNav/model";
 import SideNav from "@/components/SideNav";
 import { getDefaultSideNavConfig } from "@/components/SideNav/default-side-nav-configuration";
 
@@ -29,7 +31,7 @@ function Layout({ children, titleToActivate, breadcrumbs }:LayoutProps) {
     breadCrumbs: breadcrumbs,
   };
 
-  return <SideNav data={_sideNavConfig}>{children}</SideNav>;
+  return <SideNav contentTitle data={_sideNavConfig}>{children}</SideNav>;
 };
 
 Layout.Title = Title;

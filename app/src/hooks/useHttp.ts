@@ -29,6 +29,7 @@ const useHttp = () => {
     controller = new AbortController();
 
     try {
+      setError("");
       const response = await axiosInstance.request({
         url,
         method,
@@ -46,6 +47,7 @@ const useHttp = () => {
         } else {
           setError("An unknown error occurred");
         }
+        throw error;
       }
     } finally {
       setLoading(false);

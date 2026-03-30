@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { SidebarData } from "./model";
+import type { SidebarData } from "./model";
 
 const SideNavContext = createContext<{data: SidebarData} | null>(null);
 

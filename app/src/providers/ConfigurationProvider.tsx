@@ -21,7 +21,7 @@ interface ConfigurationStoreProps {
 
 const defaultConfigurationStoreProps: ConfigurationStoreProps = {
 	configuration: defaultConfiguration,
-	setConfiguration: () => { }
+	setConfiguration: (data: Configuration) => { console.dir(data); }
 }
 
 const ConfigurationStoreContext = React.createContext<ConfigurationStoreProps>(defaultConfigurationStoreProps);

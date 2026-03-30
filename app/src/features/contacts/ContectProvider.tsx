@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Contact } from "./models";
+import type { Contact } from "./models";
 import useHttp from "@/hooks/useHttp";
 import { useConfiguration } from "@/providers/ConfigurationProvider";
 
@@ -76,7 +76,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
         // if contacts are an array and not empty, filter them
         const filtered = contacts.filter((c) =>
             Object.values(c).some((value) =>
-                value.toLowerCase().includes(searchTerm.toLowerCase())
+                String(value).toLowerCase().includes(searchTerm.toLowerCase())
             )
         );
         setFilteredContacts(filtered);
@@ -90,7 +90,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
 
     const reloadContacts = () => {
         getAllHttp.sendRequest({
-            url: "/contacts",
+            url: "/customers",
             method: "GET"})
     };
 
@@ -100,7 +100,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
             id: contact.id ?? Math.random().toString(36).substring(2, 15) // generate a random id if not provided
         }
         updateContactHttp.sendRequest({
-            url: "/contacts",
+            url: "/customer",
             method: "POST",
             data:newContact,
             headers: { "Content-Type": "application/json" },
@@ -112,7 +112,7 @@ export const ContactContextProvider: React.FC<{ children: React.ReactNode }> = (
 
     const updateContact = (id:string, contact: Partial<Contact>, onSuccess: (e:Contact) => void) => {
         updateContactHttp.sendRequest({
-            url: `/contact/${id}`,
+            url: `/customer/${id}`,
             method: "PUT",
             data:contact,
             headers: { "Content-Type": "application/json" },

@@ -1,5 +1,5 @@
 import React from "react";
-import { SidebarData } from "./model";
+import type { SidebarData } from "./model";
 import { SideNavProvider } from "./SideNavContext";
 import { AppSidebar } from "./internal/AppSideBar";
 import { SidebarInset, SidebarTrigger } from "../ui/sidebar";

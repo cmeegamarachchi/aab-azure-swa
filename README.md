@@ -8,7 +8,7 @@ This project provides a production-ready foundation for building full-stack appl
 
 ## Architecture
 
-- **Frontend**: React 18 with TypeScript, Vite build system, Tailwind CSS
+- **Frontend**: React 19 with TypeScript, Vite build system, Tailwind CSS
 - **Backend**: Azure Functions with TypeScript
 - **Deployment**: Azure Static Web Apps with integrated CI/CD
 - **Development**: SWA CLI for local development and testing

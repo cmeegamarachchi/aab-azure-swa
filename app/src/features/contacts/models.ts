@@ -6,4 +6,5 @@ export type Contact = {
   street_address: string
   city: string
   country: string
+  signed_on_date?: Date
 }
